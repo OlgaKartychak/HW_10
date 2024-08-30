@@ -1,0 +1,29 @@
+    8  git branch
+    9  git checkout main
+   10  git status
+   11  touch text_ignore.txt
+   12  git status
+   13  git status
+   14  git add .
+   15  git add .
+   16  git status
+   17  git commit -m "text_ignore.txt was created and added to .gitignore"
+   18  touch main_test.txt
+   19  git status
+   20  git add .
+   21  git status
+   22  git commit -m "main_test.txt was created"
+   23  git checkout -b developer
+   24  git branch
+   25  touch develop_test.txt
+   26  git status
+   27  git add .
+   28  git commit -m "develop_test.txt was created"
+   29  nano develop_test.txt
+   30  git status
+   31  git add .
+   32  git commit -m "develop_test.txt was changed"
+   33  git checkout main
+   34  git status
+   35  git merge developer
+   36  git log
